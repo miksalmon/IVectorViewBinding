@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "IVectorViewBinding (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "IVectorViewBinding (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

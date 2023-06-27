@@ -1,14 +1,14 @@
-<Page
-    x:Class="IVectorViewBinding.MainPage"
+<?xml version="1.0" encoding="utf-8" ?>
+<UserControl
+    x:Class="IVectorViewBinding.MyUserControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:IVectorViewBinding"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     mc:Ignorable="d">
-    <local:MyCustomControl MyCollection="{x:Bind MyCollection}">
-        <ItemsRepeater ItemsSource="{x:Bind MyCollection}" />
-    </local:MyCustomControl>
-</Page>
+
+    <Grid>
+        <Button Click="Button_Click">My Button</Button>
+    </Grid>
+</UserControl>

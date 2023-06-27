@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>accd3aa8-1ba0-4223-9bbe-0c431709210b</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{926ab91d-31b4-48c3-b9a4-e681349f27f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f1dffc33-179f-47d3-ae27-79571fe01ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\BindableVector">
+      <UniqueIdentifier>{27ad89be-a12a-4d4e-8566-8ddef859b9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Collection">
+      <UniqueIdentifier>{10a0e7b5-e9f3-4c65-ba90-68abed77f011}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Class.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="BindableIterator.cpp">
+      <Filter>src\BindableVector</Filter>
+    </ClCompile>
+    <ClCompile Include="BindableVector.cpp">
+      <Filter>src\BindableVector</Filter>
+    </ClCompile>
+    <ClCompile Include="MyItemCollection.cpp">
+      <Filter>src\Collection</Filter>
+    </ClCompile>
+    <ClCompile Include="MyItemIteratorToInspectableIteratorAdapter.cpp">
+      <Filter>src\Collection</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="BindableIterator.h">
+      <Filter>src\BindableVector</Filter>
+    </ClInclude>
+    <ClInclude Include="BindableVector.h">
+      <Filter>src\BindableVector</Filter>
+    </ClInclude>
+    <ClInclude Include="MyItemIteratorToInspectableIteratorAdapter.h">
+      <Filter>src\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="MyItemCollection.h">
+      <Filter>src\Collection</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="BindableIterator.idl">
+      <Filter>src\BindableVector</Filter>
+    </Midl>
+    <Midl Include="BindableVector.idl">
+      <Filter>src\BindableVector</Filter>
+    </Midl>
+    <Midl Include="MyItemCollection.idl">
+      <Filter>src\Collection</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WinRtComponent.def" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertySheet.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+</Project>

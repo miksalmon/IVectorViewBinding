@@ -1,0 +1,38 @@
+
+namespace WinRtComponent
+{
+    interface IMyItem requires
+        Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        String Name{ get; set; };
+        // TODO: add properties that need binding
+    };
+
+    [bindable]
+    [default_interface]
+    runtimeclass MyItem : IMyItem
+    {
+        MyItem();
+    };
+
+    interface IMyItemCollection requires
+        Windows.Foundation.Collections.IVectorView<IInspectable>,
+        Microsoft.UI.Xaml.Interop.INotifyCollectionChanged
+    {
+        Int32 IndexOf(WinRtComponent.IMyItem value);
+    };
+
+    [bindable]
+    [default_interface]
+    runtimeclass MyItemCollection : IMyItemCollection
+    {
+        MyItemCollection();
+    };
+
+    [bindable]
+    [default_interface]
+    runtimeclass MyItemIteratorToInspectableIteratorAdapter : IIterator<IInspectable>
+    {
+        MyItemIteratorToInspectableIteratorAdapter(IIterator<WinRtComponent.IMyItem> source);
+    }
+}

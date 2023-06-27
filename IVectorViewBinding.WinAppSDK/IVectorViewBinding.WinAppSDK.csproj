@@ -13,7 +13,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="MainPage.xaml" />
-    <None Remove="Llama.jpg" />
     <None Remove="MyUserControl.xaml" />
   </ItemGroup>
 
@@ -25,7 +24,6 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-    <Content Include="Llama.jpg" />
   </ItemGroup>
 
   <ItemGroup>

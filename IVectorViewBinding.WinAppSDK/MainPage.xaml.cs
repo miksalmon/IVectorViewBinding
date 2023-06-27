@@ -13,6 +13,7 @@ namespace IVectorViewBinding;
 
 public sealed partial class MainPage : Page
 {
+    // Defining this as MyItemCollection instead of IMyItemCollection fixes the binding issue
     public IMyItemCollection MyCollection { get; } = new MyItemCollection();
 
     public MainPage()

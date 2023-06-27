@@ -14,17 +14,12 @@ namespace IVectorViewBinding
                 nameof(MyCollection),
                 typeof(IReadOnlyList<object>),
                 typeof(MyCustomControl),
-                new PropertyMetadata(null, (dp, e) => ((MyCustomControl)dp).OnMyCollectionChanged((IReadOnlyList<object>)e.NewValue)));
+                new PropertyMetadata(null));
 
         public IReadOnlyList<object> MyCollection
         {
             get => (IReadOnlyList<object>)GetValue(MyCollectionProperty);
             set => SetValue(MyCollectionProperty, value);
-        }
-
-        private void OnMyCollectionChanged(IReadOnlyList<object> value)
-        {
-
         }
     }
 }

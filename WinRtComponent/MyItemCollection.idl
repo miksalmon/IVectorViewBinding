@@ -8,7 +8,7 @@ namespace WinRtComponent
         // TODO: add properties that need binding
     };
 
-    [bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     [default_interface]
     runtimeclass MyItem : IMyItem
     {
@@ -22,14 +22,14 @@ namespace WinRtComponent
         Int32 IndexOf(WinRtComponent.IMyItem value);
     };
 
-    [bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     [default_interface]
     runtimeclass MyItemCollection : IMyItemCollection
     {
         MyItemCollection();
     };
 
-    [bindable]
+    [Microsoft.UI.Xaml.Data.Bindable]
     [default_interface]
     runtimeclass MyItemIteratorToInspectableIteratorAdapter : IIterator<IInspectable>
     {
